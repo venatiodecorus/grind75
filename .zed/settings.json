@@ -1,0 +1,7 @@
+{
+  "inline_completions": {
+    "disabled_globs": [
+      "**/*.ts"
+    ]
+  }
+}
