@@ -1,0 +1,23 @@
+[
+  {
+    "label": "Run C++ Test",
+    "command": "cd src/cpp && ./run_test.sh $(basename $ZED_FILE .test.cpp | sed 's/\\.cpp$//')_test",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  },
+  {
+    "label": "Run C++ Test (Debug)",
+    "command": "cd src/cpp && cmake -DCMAKE_BUILD_TYPE=Debug -B build && cd build && make && lldb ./$(basename $ZED_FILE .test.cpp | sed 's/\\.cpp$//')_test",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  },
+  {
+    "label": "Build All C++ Tests",
+    "command": "cd src/cpp && ./run_test.sh",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  }
+]
