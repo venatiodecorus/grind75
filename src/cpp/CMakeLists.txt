@@ -31,3 +31,45 @@ target_link_libraries(
 
 include(GoogleTest)
 gtest_discover_tests(110-balanced-binary-tree_test)
+
+# Add test executable for 141-linked-list-cycle
+add_executable(
+  141-linked-list-cycle_test
+  141-linked-list-cycle.cpp
+  141-linked-list-cycle.test.cpp
+)
+
+target_link_libraries(
+  141-linked-list-cycle_test
+  GTest::gtest_main
+)
+
+gtest_discover_tests(141-linked-list-cycle_test)
+
+# Add test executable for 232-implement-queue-using-stacks
+add_executable(
+  232-implement-queue-using-stacks_test
+  232-implement-queue-using-stacks.cpp
+  232-implement-queue-using-stacks.test.cpp
+)
+
+target_link_libraries(
+  232-implement-queue-using-stacks_test
+  GTest::gtest_main
+)
+
+gtest_discover_tests(232-implement-queue-using-stacks_test)
+
+# Add test executable for 278-first-bad-version
+add_executable(
+  278-first-bad-version_test
+  278-first-bad-version.cpp
+  278-first-bad-version.test.cpp
+)
+
+target_link_libraries(
+  278-first-bad-version_test
+  GTest::gtest_main
+)
+
+gtest_discover_tests(278-first-bad-version_test)

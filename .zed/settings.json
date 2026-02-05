@@ -1,7 +1,5 @@
 {
   "inline_completions": {
-    "disabled_globs": [
-      "**/*.ts"
-    ]
-  }
+    "disabled_globs": ["**/*.ts", "**/*.cpp", "**/*.h"],
+  },
 }
