@@ -73,3 +73,17 @@ target_link_libraries(
 )
 
 gtest_discover_tests(278-first-bad-version_test)
+
+# Add test executable for 383-ransom-note
+add_executable(
+  383-ransom-note_test
+  383-ransom-note.cpp
+  383-ransom-note.test.cpp
+)
+
+target_link_libraries(
+  383-ransom-note_test
+  GTest::gtest_main
+)
+
+gtest_discover_tests(383-ransom-note_test)
