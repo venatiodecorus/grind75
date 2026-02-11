@@ -87,3 +87,17 @@ target_link_libraries(
 )
 
 gtest_discover_tests(383-ransom-note_test)
+
+# Add test executable for 70-climbing-stairs
+add_executable(
+  70-climbing-stairs_test
+  70-climbing-stairs.cpp
+  70-climbing-stairs.test.cpp
+)
+
+target_link_libraries(
+  70-climbing-stairs_test
+  GTest::gtest_main
+)
+
+gtest_discover_tests(70-climbing-stairs_test)
