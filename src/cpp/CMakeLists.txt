@@ -101,3 +101,17 @@ target_link_libraries(
 )
 
 gtest_discover_tests(70-climbing-stairs_test)
+
+# Add test executable for 409-longest-palindrome
+add_executable(
+  409-longest-palindrome_test
+  409-longest-palindrome.cpp
+  409-longest-palindrome.test.cpp
+)
+
+target_link_libraries(
+  409-longest-palindrome_test
+  GTest::gtest_main
+)
+
+gtest_discover_tests(409-longest-palindrome_test)
